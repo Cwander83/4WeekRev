@@ -1,0 +1,37 @@
+{
+  "name": "workoutplan-mongodb",
+  "version": "1.0.0",
+  "description": "mongodb-express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "npm start --prefix client",
+    "watch": "nodemon server.js",
+    "dev": "nodemon --ignore client/ server.js",
+    "fullstart": "concurrently \"npm run watch\" \"npm run client\""
+  },
+  "keywords": [
+    "mongodb",
+    "express"
+  ],
+  "author": "Chris Wander",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.3.5",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.11.0"
+  }
+}
