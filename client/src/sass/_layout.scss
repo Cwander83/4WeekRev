@@ -1,27 +1,8 @@
-html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  width: 100%;
-
-}
-h1,h2,h3,h4,h5{
-    font-size: 40px;
-   
-}
-h1 {
-    color: $Yellow;
-    font-family: $Raleway;
-}
-h2{
-    color: $SilverFox;
-    font-family: $Roboto;
-}
-h3{
-    color: $DeepMatteGrey;
-
-}
-h4{
-    color: $DarkSlate;
-}
-h5 {
-    color: $RoseGold;
+  height: 100vh;
 }

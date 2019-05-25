@@ -1,0 +1,55 @@
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-color: $DeepMatteGrey;
+  text-align: center;
+
+  h4 {
+    position: relative;
+    top: 20%;
+  }
+
+  ul {
+    list-style-type: none;
+
+    top: 40%;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    padding: 10px 5px;
+    border: 1px solid $DarkSlate;
+    background-color: $DarkSlate;
+    li {
+      text-align: start;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 3px 0;
+      padding: 10px;
+      border: 1px solid black;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 0.7em;
+      background: $DeepMatteGrey;
+      color: $RoseGold;
+    }
+    li:hover {
+      animation-name: changeColor;
+      animation-duration: 1s;
+
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes changeColor {
+  from {
+    background: $DeepMatteGrey;
+  }
+  to {
+    color: black;
+
+    box-shadow: 4px 4px black;
+    transform: translatex(5%);
+    background-color: $Yellow;
+  }
+}

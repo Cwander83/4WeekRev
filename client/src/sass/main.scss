@@ -1,9 +1,12 @@
-
-//  Top level 
+//  Top level
 @import './base';
 @import './layout';
 @import './functions';
 @import './mixins';
 
- // Components
- 
+// Components
+@import './components/dashboard';
+@import './components/landing';
+@import './components/mealplan';
+@import './components/notfound';
+@import './components/workoutpreview';
