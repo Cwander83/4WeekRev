@@ -1,5 +1,11 @@
 import React from 'react';
 
-const WorkoutPreview = () => <h1>Welcome to WorkoutPreview Page</h1>;
+const WorkoutPreview = () => {
+  return (
+    <div className="workoutPreview">
+      <h1>Welcome to WorkoutPreview Page</h1>
+    </div>
+  );
+};
 
 export default WorkoutPreview;

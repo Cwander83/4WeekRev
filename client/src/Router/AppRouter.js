@@ -6,6 +6,7 @@ import MealPlans from '../components/pages/MealPlans';
 import WorkoutPreview from '../components/pages/WorkoutPreview';
 import NotFound from '../components/pages/NotFound';
 import Dashboard from '../components/pages/Dashboard';
+import Footer from '../components/Footer';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -18,6 +19,7 @@ const AppRouter = () => (
 
         <Route component={NotFound} />
       </Switch>
+      <Footer />
     </>
   </BrowserRouter>
 );

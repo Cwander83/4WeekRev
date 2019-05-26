@@ -1,24 +1,58 @@
 .landing {
   width: 100%;
   height: 100vh;
-  background-color: $DeepMatteGrey;
+  // background-color: $DeepMatteGrey;
+  background: url(../images/black.png) no-repeat;
+  background-size: cover;
   text-align: center;
+  vertical-align: middle;
 
-  h4 {
+  .title {
     position: relative;
     top: 20%;
+  }
+  h4 {
+    top: 10%;
+    color: $RoseGold;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    text-anchor: $Yellow;
+  }
+  h1 {
+    font-family: $Raleway;
+    color: $RoseGold;
+    text-shadow: 1px 1px $DarkSlate;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-size: 4em;
+    font-weight: 800;
+    margin: 0 auto 2% auto;
+  }
+
+  p {
+    letter-spacing: 0.2em;
+    font-family: $Raleway;
+    color: $RoseGold;
+    width: 50%;
+    margin: auto;
+    line-height: 1.4em;
+    max-width: 560px;
   }
 
   ul {
     list-style-type: none;
-
-    top: 40%;
+    font-family: $Raleway;
+    position: relative;
+    top: 20%;
     margin: auto;
     width: 50%;
+    max-width: 580px;
     height: auto;
     padding: 10px 5px;
-    border: 1px solid $DarkSlate;
-    background-color: $DarkSlate;
+    //border: 1px solid $DarkSlate;
+    //  background-color: transparent;
+    // background-color: $DarkSlate;
     li {
       text-align: start;
       font-weight: 700;
@@ -26,30 +60,46 @@
       margin: 3px 0;
       padding: 10px;
       border: 1px solid black;
-      font-size: 24px;
-      line-height: 30px;
-      letter-spacing: 0.7em;
+
       background: $DeepMatteGrey;
-      color: $RoseGold;
+      // background: transparent;
+
+      a {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.7em;
+        width: 100%;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $RoseGold;
+        text-decoration: none;
+      }
     }
     li:hover {
-      animation-name: changeColor;
+      animation-name: slide;
       animation-duration: 1s;
 
       animation-fill-mode: forwards;
+      a {
+        animation-name: changeColor;
+        animation-fill-mode: forwards;
+      }
     }
   }
 }
 
-@keyframes changeColor {
+@keyframes slide {
   from {
     background: $DeepMatteGrey;
   }
   to {
-    color: black;
-
     box-shadow: 4px 4px black;
     transform: translatex(5%);
     background-color: $Yellow;
+  }
+}
+@keyframes changeColor {
+  to {
+    color: black;
   }
 }
