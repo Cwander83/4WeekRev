@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+//import ReactPlayer from 'react-player';
+import triceps from '../../videos/triceps.mp4';
+import rows from '../../videos/bentoverRow.mp4';
 
 //import cage from '../../images/Untitled2.png'
 //import powerRack from '../../images/Power-Cage2.png'
@@ -13,10 +16,10 @@ const Landing = () => {
 
           <h1>the revolution</h1>
           <p>
-            This is a 4 week kick your butt into shape kinda workout!!
-            <br /> Check out the sample workout and meal plans.
-            <br /> If ready to get started, head over to the dashboard and get
-            started.
+            This is a 4 week kick your butt into shape workout program!
+            <br /> <br /> Check out the sample workout and meal plans.
+            <br /> <br /> If ready to get started, head over to the dashboard
+            and get started.
           </p>
         </div>
         <ul>
@@ -31,6 +34,8 @@ const Landing = () => {
           </li>
         </ul>
       </div>
+      <video className="video2" src={rows} autoPlay loop muted />
+      <video className="video1" src={triceps} autoPlay loop muted />
     </>
   );
 };
