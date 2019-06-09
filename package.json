@@ -8,8 +8,8 @@
     "start": "node server.js",
     "client": "npm start --prefix client",
     "watch": "nodemon server.js",
-    "dev": "nodemon --ignore client/ server.js",
-    "fullstart": "concurrently \"npm run watch\" \"npm run client\""
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run watch\" \"npm run client\""
   },
   "keywords": [
     "mongodb",

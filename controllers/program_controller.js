@@ -1,4 +1,4 @@
-const db = require('../models');
+const db = require("../models");
 
 //
 //
@@ -9,7 +9,7 @@ module.exports = {
   // finds the whole program
   FullProgram: function(req, res) {
     db.WorkoutProgram.find({})
-      .populate('workouts')
+      .populate("workouts")
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -17,17 +17,17 @@ module.exports = {
   // finds and filters by One week
   FilterByWeek: function(req, res) {
     db.WorkoutProgram.find({ week: req.params.week })
-      .populate('workouts')
+      .populate("workouts")
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
 
   // finds and filters by a certain day
-  FilterByDay: function(req, res) {
+  FilterByDayAndWeek: function(req, res) {
     //  console.log(req);
 
-    db.WorkoutProgram.find({ day: req.params.day })
-      .populate('workouts')
+    db.WorkoutProgram.find({ week: req.params.week, day: req.params.day })
+      .populate("workouts")
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
@@ -44,5 +44,5 @@ module.exports = {
     db.Workout.findOne({ bodypart: req.params.bodypart })
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
-  },
+  }
 };

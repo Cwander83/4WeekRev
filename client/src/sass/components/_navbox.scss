@@ -1,0 +1,47 @@
+/* $Yellow: #feda6a;
+$SilverFox: #d4d4dc;
+$DeepMatteGrey: #393f4d;
+$DarkSlate: #1c1d21;
+$RoseGold: #bd8c7d;
+
+$Raleway: 'Raleway', sans-serif;
+$Roboto: 'Roboto', sans-serif;
+*/
+
+nav {
+  bottom: 24px;
+  display: table;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  ul {
+    list-style-type: none;
+    height: auto;
+    position: relative;
+    bottom: 12px;
+    text-align: center;
+
+    li {
+      @include links;
+      margin: auto;
+      display: inline;
+      a {
+        @include linksA;
+        padding: 1px;
+      }
+    }
+    li:hover {
+      @include hover;
+      a {
+        animation-name: changeColor;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+@keyframes changeColor {
+  to {
+    color: black;
+  }
+}

@@ -4,10 +4,20 @@
   // background-color: $DeepMatteGrey;
   background: url(../images/black.png) no-repeat;
   background-size: cover;
- 
+  color: white;
+
   h1 {
-      margin: 0;
-      color: $SilverFox;
+    margin: 0;
+    color: $SilverFox;
   }
-  
+  .section {
+    border: 2px solid red;
+    margin: auto;
+    width: 60%;
+
+    .subSection {
+      width: auto;
+      border: 2px solid yellow;
+    }
+  }
 }

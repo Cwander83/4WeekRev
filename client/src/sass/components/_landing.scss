@@ -53,30 +53,14 @@
     padding: 10px 5px;
 
     li {
-      text-align: start;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin: 3px 0;
-      padding: 10px;
-      border: 1px solid black;
-      background: $DeepMatteGrey;
+      @include links;
 
       a {
-        font-size: 24px;
-        line-height: 30px;
-        letter-spacing: 0.7em;
-        width: 100%;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $RoseGold;
-        text-decoration: none;
+        @include linksA;
       }
     }
     li:hover {
-      animation-name: slide;
-      animation-duration: 1s;
-
-      animation-fill-mode: forwards;
+      @include hover;
       a {
         animation-name: changeColor;
         animation-fill-mode: forwards;

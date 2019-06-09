@@ -4,6 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
+// brings in the routes
 const routes = require('./routes');
 const passport = require('passport');
 // starts Express.JS as a variable
