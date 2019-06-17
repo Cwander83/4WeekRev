@@ -11,9 +11,10 @@ $Roboto: 'Roboto', sans-serif;
 nav {
   bottom: 24px;
   display: table;
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 3;
+
   ul {
     list-style-type: none;
     height: auto;
@@ -24,17 +25,22 @@ nav {
     li {
       @include links;
       margin: auto;
+
       display: inline;
+
       a {
         @include linksA;
         padding: 1px;
       }
     }
+
     li:hover {
       @include hover;
+
       a {
         animation-name: changeColor;
         animation-fill-mode: forwards;
+        letter-spacing: 0.7em;
       }
     }
   }

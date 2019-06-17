@@ -11,16 +11,16 @@
 @mixin linksA {
   font-size: 24px;
   line-height: 30px;
-  letter-spacing: 0.7em;
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
   color: $RoseGold;
   text-decoration: none;
+  letter-spacing: 0.3em;
 }
 
 @mixin hover {
   animation-name: slide;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
