@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 //import ReactPlayer from 'react-player';
 import triceps from '../../videos/triceps.mp4';
 import rows from '../../videos/bentoverRow.mp4';
+//import logo from '../../images/post2.png';
 
 //import cage from '../../images/Untitled2.png'
 //import powerRack from '../../images/Power-Cage2.png'
@@ -11,6 +12,7 @@ const Landing = () => {
   return (
     <>
       <div className="landing">
+        
         <div className="title">
           <h4>welcome to</h4>
 

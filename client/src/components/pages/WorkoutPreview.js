@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { connect } from "react-redux";
 //import { callingFullProgram } from "../../redux/Actions";
 import API from '../../api/API';
+// import logo from '../../images/post2.png';
 
 import NavBox from '../NavBox';
 
@@ -28,6 +29,7 @@ class WorkoutPreview extends Component {
         <NavBox />
 
         <header>
+          
           <h1>Sneak Peek of Four Week Revolution</h1>
         </header>
         {// mapping thru first object
@@ -62,7 +64,8 @@ class WorkoutPreview extends Component {
                     )}
                     <h3>Strategy</h3>
                     <p>
-                      <span>Sets:</span> {data.regularsets} x {data.regularreps}
+                      <span>Sets:</span> {data.regularsets} x{' '}
+                      {data.regularreps}
                     </p>
 
                     <p>

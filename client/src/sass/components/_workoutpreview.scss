@@ -7,7 +7,6 @@
 .workoutPreview {
   width: 100%;
   height: auto;
-  // background-color: $DeepMatteGrey;
   background: url(../images/black.png) no-repeat;
   background-size: cover;
   color: white;
@@ -15,7 +14,8 @@
   header {
     background: $DarkSlate;
     border-bottom: 1px solid rgba($RoseGold, 0.5);
-
+box-shadow: (rgba($Yellow, 0.3) 2px 1px 1px );
+     
     h1 {
       margin: 0;
       padding-left: 30px;
@@ -23,6 +23,7 @@
       font-size: 28px;
       line-height: 80px;
       letter-spacing: 2px;
+      
     }
   }
   .section {
@@ -40,17 +41,18 @@
       border-radius: 80%;
       box-shadow: (rgba($Yellow, 0.3) 2px 1px 1px );
       letter-spacing: 1px;
+      color: $SilverFox;
     }
 
     .subSection {
       margin-top: 20px;
       width: auto;
-      // border: 2px solid yellow;
       font-family: $Roboto;
 
       h2 {
         font-size: 30px;
         line-height: 50px;
+        color: $SilverFox;
       }
 
       .workout {
