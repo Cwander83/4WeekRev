@@ -12,7 +12,6 @@ const Landing = () => {
   return (
     <>
       <div className="landing">
-        
         <div className="title">
           <h4>welcome to</h4>
 
@@ -32,7 +31,7 @@ const Landing = () => {
             <Link to="/workoutpreview">Workout Preview</Link>
           </li>
           <li>
-            <Link to="/mealplans">Meal Plans</Link>
+            <Link to="/mealplan">Meal Plans</Link>
           </li>
         </ul>
       </div>
