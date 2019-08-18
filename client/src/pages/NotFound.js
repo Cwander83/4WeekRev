@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import homeAlone from '../../images/Home-Alone.jpg';
+import homeAlone from '../images/Home-Alone.jpg';
 
 const NotFound = () => (
   <div className="notFound">

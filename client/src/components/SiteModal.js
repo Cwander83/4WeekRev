@@ -13,18 +13,9 @@ const customStyles = {
   },
 };
 const SiteModal = props => {
-  // state = {
-  //     userName: '',
-  //     email: '',
-  //     password: '',
-  //     password2: '',
-  //     errors : {}
-
-  // };
-
   return (
     <div>
-      <button onClick={props.openModal}>open</button>
+      <button onClick={props.openModal}>{props.buttonName}</button>
       <Modal
         isOpen={props.modalIsOpen}
         onRequestClose={props.closeModal}
@@ -33,8 +24,7 @@ const SiteModal = props => {
         contentLabel="Example Modal"
         ariaHideApp={true}
       >
-        <h3>Modal</h3>
-
+        {props.video || props.registerForm || props.loginForm}
         <button onClick={props.closeModal}>close</button>
       </Modal>
     </div>

@@ -24,3 +24,11 @@
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+
+@mixin pageBackgrounds {
+   width: 100%;
+  height: auto;
+  background: $DarkSlate;
+  background-size: cover;
+  color: white;
+}

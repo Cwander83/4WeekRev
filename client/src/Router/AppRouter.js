@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Landing from '../components/pages/Landing';
-import MealPlans from '../components/pages/MealPlans';
-import WorkoutPreview from '../components/pages/WorkoutPreview';
-import NotFound from '../components/pages/NotFound';
-import Dashboard from '../components/pages/Dashboard';
+import Landing from '../pages/Landing';
+import MealPlan from '../pages/MealPlan';
+import WorkoutPreview from '../pages/WorkoutPreview';
+import NotFound from '../pages/NotFound';
+import Dashboard from '../pages/Dashboard';
 import Footer from '../components/Footer';
 
 const AppRouter = () => (
@@ -13,7 +13,7 @@ const AppRouter = () => (
     <>
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/mealplan" component={MealPlans} />
+        <Route path="/mealplan" component={MealPlan} />
         <Route path="/workoutpreview" component={WorkoutPreview} />
         <Route path="/dashboard" component={Dashboard} />
 

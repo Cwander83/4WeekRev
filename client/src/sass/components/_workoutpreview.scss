@@ -1,3 +1,4 @@
+
 //  $Yellow: #feda6a;
 // $SilverFox: #d4d4dc;
 // $DeepMatteGrey: #393f4d;
@@ -7,30 +8,17 @@
 .workoutPreview {
   width: 100%;
   height: auto;
-  background: url(../images/black.png) no-repeat;
+  background: $DarkSlate;
   background-size: cover;
   color: white;
 
-  header {
-    background: $DarkSlate;
-    border-bottom: 1px solid rgba($RoseGold, 0.5);
-box-shadow: (rgba($Yellow, 0.3) 2px 1px 1px );
-     
-    h1 {
-      margin: 0;
-      padding-left: 30px;
-      color: $SilverFox;
-      font-size: 28px;
-      line-height: 80px;
-      letter-spacing: 2px;
-      
-    }
-  }
+ 
   .section {
     font-family: $Raleway;
     // border: 2px solid red;
     margin: auto;
     padding-bottom: 8%;
+    padding-left: 5%;
     width: 75%;
 
     h1 {

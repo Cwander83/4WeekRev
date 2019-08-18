@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 // import { connect } from "react-redux";
 //import { callingFullProgram } from "../../redux/Actions";
-import API from '../../api/API';
-// import logo from '../../images/post2.png';
+import API from '../api/API';
 
-import NavBox from '../NavBox';
+import Header from '../components/Header';
 
 class WorkoutPreview extends Component {
   state = {
@@ -21,17 +20,18 @@ class WorkoutPreview extends Component {
       .catch(err => console.log(err));
   };
 
+  componentWillUnmount() {
+    this.setState({ workouts: [] });
+    console.log('componentWillUnmount');
+  }
+
   render() {
     //console.log(`state: ${JSON.stringify(this.state, null, 2)}`);
     //  console.log(`props: ${JSON.stringify(this.props, null, 2)}`);
     return (
       <div className="workoutPreview">
-        <NavBox />
+        <Header />
 
-        <header>
-          
-          <h1>Sneak Peek of Four Week Revolution</h1>
-        </header>
         {// mapping thru first object
         this.state.workouts.map(all => (
           <div key={all._id} className="section">
@@ -64,8 +64,7 @@ class WorkoutPreview extends Component {
                     )}
                     <h3>Strategy</h3>
                     <p>
-                      <span>Sets:</span> {data.regularsets} x{' '}
-                      {data.regularreps}
+                      <span>Sets:</span> {data.regularsets} x {data.regularreps}
                     </p>
 
                     <p>

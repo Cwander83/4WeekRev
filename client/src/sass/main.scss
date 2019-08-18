@@ -5,11 +5,12 @@
 @import './mixins';
 
 // Components
-@import './components/dashboard';
 @import './components/landing';
+@import './components/dashboard';
+@import './components/navbox';
 @import './components/mealplan';
 @import './components/notfound';
 @import './components/workoutpreview';
 @import './components/footer';
-@import './components/navbox';
 @import './components/sitemodal';
+@import './components/header';
